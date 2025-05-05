@@ -42,55 +42,50 @@ body {
   transition: background-color 0.2s;
 }
 
-.navbar a.active,
-.navbar a:hover {
-  background-color: #ffcc00;
-  color: #003366;
+nav .active {
+  background: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-/* Sidebar */
-.sidebar {
-  width: 250px;
-  float: left;
-  background-color: #e6edf3;
+.container {
+  display: flex;
   padding: 20px;
-  min-height: 100vh;
+  gap: 20px;
 }
 
-.sidebar h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #003366;
+.sidebar {
+  width: 20%;
+  background: #e6ecf3;
+  padding: 15px;
+  border-right: 1px solid #ccc;
 }
 
-.sidebar h4 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #003366;
+.sidebar ul {
+  list-style: none;
+  margin-top: 10px;
 }
 
 .sidebar a {
-  display: block;
-  padding: 10px;
-  color: #003366;
   text-decoration: none;
-  margin-bottom: 5px;
+  color: #003366;
 }
 
-.sidebar a:hover {
-  background-color: #5f84a2;
+.sidebar .courses {
+  background: #3f6ba0;
+  padding: 10px;
   color: white;
+  border-radius: 5px;
 }
 
-/* Main */
-.main {
-  margin-left: 270px;
-  padding: 30px;
+.content {
+  width: 50%;
 }
 
-.panel {
-  border-top: 5px solid #003366;
-  padding-top: 15px;
+.content h2 {
+  margin-bottom: 15px;
+  color: #003366;
 }
 
 .info-box {
